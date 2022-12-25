@@ -576,7 +576,6 @@ Player Tubal_Castle(Player& acc, Friend fr)
 	timer();
 	Enemy e_acc("Guradian", 300, 100);
 	battle_with_friend(acc, fr, e_acc, acc.getExp());
-	cout << "Soon arrived reinforsments\n";
 	timer();
 	return acc;
 }
@@ -822,6 +821,7 @@ int main() //Сценарий игры
 			Port(account);
 			if (account.getHealth() <= 0)
 				continue;
+			After_Port_Battle(account);
 			cout << " 1:Kill Lightning Lords\n 2:Save tribe\n";
 			cin >> what;
 			if (what == 1)
