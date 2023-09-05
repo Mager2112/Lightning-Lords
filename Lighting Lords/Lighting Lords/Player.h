@@ -1,3 +1,7 @@
+/*
+Copyright Mager 2022
+All rights reserved lmao
+*/
 #pragma once
 #include <iostream>
 #include "windows.h"
@@ -13,7 +17,7 @@ public:
 	int Health;
 	int Exp;
 	bool Tribe;
-	Player(string, int, int, int, bool); // Конструктор
+	Player(string, int, int, int, bool);
 	~Player();
 	string getClass() const;
 	void setClass(string newClass);
