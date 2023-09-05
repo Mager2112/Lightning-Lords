@@ -1,4 +1,8 @@
-#include <iostream> // друга
+/*
+Copyright Mager 2022
+All rights reserved lmao
+*/
+#include <iostream>
 #include "windows.h"
 #include <cstdlib>
 #include <time.h>
@@ -15,11 +19,11 @@ Friend::~Friend()
 {
 	//cout << "Enemy defeated\n";
 }
-string Friend::Friend_getClass()//Геттер, благодаря которому можно получить класс персонажу. Const не изменяет тип
+string Friend::Friend_getClass()
 {
 	return name;
 }
-void Friend::Friend_setClass(string newname)//Сеттер, который позволяет установить класс
+void Friend::Friend_setClass(string newname)
 {
 	name = newname;
 }
