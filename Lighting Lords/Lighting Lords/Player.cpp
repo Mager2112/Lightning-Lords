@@ -1,3 +1,7 @@
+/*
+Copyright Mager 2022
+All rights reserved lmao
+*/
 #include <iostream>
 #include "windows.h"
 #include <cstdlib>
@@ -18,11 +22,11 @@ Player::~Player()
 {
 	//cout << "end of story\n";
 }
-string Player::getClass() const//Геттер, благодаря которому можно получить класс персонажу. Const не изменяет тип
+string Player::getClass() const
 {
 	return Class;
 }
-void Player::setClass(string newClass)//Сеттер, который позволяет установить класс
+void Player::setClass(string newClass)
 {
 	Class = newClass;
 }
