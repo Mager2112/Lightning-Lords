@@ -1,4 +1,8 @@
-#include <iostream> // Код врага
+/*
+Copyright Mager 2022
+All rights reserved lmao
+*/
+#include <iostream> 
 #include "windows.h"
 #include <cstdlib>
 #include <time.h>
@@ -15,11 +19,11 @@ Enemy::~Enemy()
 {
 	//cout << "Enemy defeated\n";
 }
-string Enemy::Enemy_getClass()//Геттер, благодаря которому можно получить класс персонажу. Const не изменяет тип
+string Enemy::Enemy_getClass()
 {
 	return EClass;
 }
-void Enemy::Enemy_setClass(string newClass)//Сеттер, который позволяет установить класс
+void Enemy::Enemy_setClass(string newClass)
 {
 	EClass = newClass;
 }
