@@ -21,16 +21,16 @@ using namespace std;
 
 																							   by Mager2112 (Пикулин К. М. ИУ8-31)
 */
-void timer()// нажмите любую клавишу
+void timer()// press any button
 {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 4); // выделение голубым цветом
+	SetConsoleTextAttribute(hConsole, 4); // light blue light
 	cout << "  Press any key to continue\n";
 	_getch();
 	SetConsoleTextAttribute(hConsole, 7);
 	system("cls");
 } 
-void menu() // Команда запуска главного меню
+void menu() // Main menu
 {
 	cout << "\t\t\t\t\tLIGHTING LORDS\n";
 	cout << "Do you want to play the game? y/n\n";
@@ -42,7 +42,7 @@ void menu() // Команда запуска главного меню
 		Sleep(500);
 		system("cls");
 	}
-	else exit(0);//выход из игры
+	else exit(0);
 }
 void Bad_end(Player acc)
 {
@@ -261,7 +261,7 @@ Player Store(Player& acc, int exp)
 	SetConsoleTextAttribute(hConsole, 7);
 	return acc;
 }
-Player simple_battle(Player &acc, Enemy e_acc, int exp) // Макет одиночного сражения
+Player simple_battle(Player &acc, Enemy e_acc, int exp)
 {
 	string what;
 	int health = acc.getHealth();
@@ -600,9 +600,9 @@ Player Tubal_Castle_3(Player& acc, Friend fr)
 void Speech()
 {
 	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 11); // выделение голубым цветом
-	cout << "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n";
-	cout << "MMMMMMMMMMMMMMMMW0xdlcld0XNMMMMMMMMMMMMMMMMMMMMMMM\n";
+	SetConsoleTextAttribute(hConsole, 11);
+	        cout << "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\n";
+	        cout << "MMMMMMMMMMMMMMMMW0xdlcld0XNMMMMMMMMMMMMMMMMMMMMMMM\n";
 		cout << "MMMMMMMMMMMMMMMMk.      ..oNMMMMMMMMMMMMMMMMMMMMMM\n";
 		cout << "MMMMMMMMMMMMMMMK;         :NMMMMMMMMMMMMMMMMMMMMMM\n";
 		cout << "MMMMMMMMMMMMMMNo         : NMMMMMMMMMMMMMMMMMMMMMM\n";
@@ -784,7 +784,7 @@ int main() //Сценарий игры
 		random_event(account);
 		if (account.getHealth() <= 0)
 			continue;
-		// -----------------------------------------------------------
+		// meeting friend
 		string name = "Mira";
 		Friend f_acc(" ", 0, 0, 0);
 		f_acc.Friend_setClass(name);
