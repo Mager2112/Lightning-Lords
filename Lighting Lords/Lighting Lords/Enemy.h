@@ -3,7 +3,7 @@ Copyright Mager 2022
 All rights reserved lmao
 */
 #pragma once
-#include <iostream> // Çàãîëîâî÷íûé ôàéë âðàãà
+#include <iostream>
 #include "windows.h"
 #include <cstdlib>
 #include <time.h>
