@@ -1,5 +1,9 @@
+/*
+Copyright Mager 2022
+All rights reserved lmao
+*/
 #pragma once
-#include <iostream> // Заголовочный файл врага
+#include <iostream> // Г‡Г ГЈГ®Г«Г®ГўГ®Г·Г­Г»Г© ГґГ Г©Г« ГўГ°Г ГЈГ 
 #include "windows.h"
 #include <cstdlib>
 #include <time.h>
